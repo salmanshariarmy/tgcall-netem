@@ -1,0 +1,4 @@
+*.pcap
+*.log
+snapshot_*.txt
+matrix_results_*
