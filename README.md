@@ -23,7 +23,7 @@ identify which media endpoints the client actually connects to.
 
 ## Setup
 
-    git clone https://github.com/<you>/tgcall-netem.git
+    git clone https://github.com/salmanshariarmy/tgcall-netem.git
     cd tgcall-netem
     chmod +x *.sh
     sudo apt install -y iproute2 tcpdump        # if missing
