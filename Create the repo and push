@@ -1,0 +1,17 @@
+# 1. Assemble locally
+mkdir -p ~/tgcall/docs && cd ~/tgcall
+# (create/paste all files above: capture_endpoints.sh, impair.sh, matrix.sh,
+#  README.md, LICENSE, .gitignore, docs/test-matrix.md)
+chmod +x capture_endpoints.sh impair.sh matrix.sh
+
+# 2. Init and commit
+git init
+git add .
+git commit -m "Initial: netem-based RTC call impairment harness"
+
+# 3. Create the GitHub repo (no description needed via CLI if gh is installed)
+gh repo create tgcall-netem --public --source=. --push
+# — or manually: create repo on github.com, then:
+git branch -M main
+git remote add origin https://github.com/<you>/tgcall-netem.git
+git push -u origin main
